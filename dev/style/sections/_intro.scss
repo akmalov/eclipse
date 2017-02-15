@@ -37,25 +37,4 @@
   align-items: flex-start;
   width: 660px;
   padding-bottom: 120px;
-
-  &__title, &__desc {
-    width: 520px;
-  }
-
-  &__title {
-    margin-bottom: 32px;
-    font-size: 60px;
-    line-height: 0.92;
-    font-family: Montserrat;
-    font-weight: 700;
-    color: #fff;
-    text-transform: uppercase;
-  }
-
-  &__desc {
-    margin-bottom: 24px;
-    padding-left: 2px;
-    line-height: 1.5;
-    color: #fff;
-  }
 }

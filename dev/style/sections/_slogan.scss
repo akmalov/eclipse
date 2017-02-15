@@ -1,0 +1,30 @@
+.slogan {
+  min-height: 890px;
+  background: url("../img/bg/slogan.jpg") center center / cover no-repeat;
+
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 890px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__logo {
+    display: block;
+    width: 177px;
+    height: 177px;
+    margin-right: 40px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

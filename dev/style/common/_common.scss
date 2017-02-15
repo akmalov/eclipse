@@ -1,0 +1,23 @@
+.slogan {
+
+  &-title, &-desc {
+    width: 520px;
+  }
+
+  &-title {
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 0.92;
+    font-family: Montserrat;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  &-desc {
+    margin-bottom: 24px;
+    padding-left: 2px;
+    line-height: 1.5;
+    color: #fff;
+  }
+}
