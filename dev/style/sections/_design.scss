@@ -1,0 +1,54 @@
+.design {
+  min-height: 542px;
+  background: url("../img/bg/design.png") center center / cover;
+
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 118px 0 50px;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+    }
+
+    &:before {
+      top: -49px;
+      left: 532px;
+      width: 114px;
+      height: 114px;
+      border-radius: 50%;
+      background: #f5f7f9;
+    }
+
+    &:after {
+      top: -9px;
+      left: 573px;
+      width: 33px;
+      height: 33px;
+      background: url("../img/icons/scroll-arrows.png") -20px -20px no-repeat;
+      cursor: pointer;
+    }
+  }
+
+  &__title {
+    max-width: 600px;
+    margin-bottom: 35px;
+    font-size: 40px;
+    line-height: 0.725;
+    font-weight: 700;
+    color: #333b42;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    max-width: 700px;
+    font-size: 14px;
+    line-height: 1.79;
+    color: #74797e;
+    text-align: center;
+  }
+}
