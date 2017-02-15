@@ -1,0 +1,155 @@
+.footer {
+  position: relative;
+  min-height: 1104px;
+  background: #fff;
+  font-size: 12px;
+  font-family: Montserrat;
+  color: #8297a7;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    cursor: pointer;
+  }
+
+  &:before {
+    top: 239px;
+    left: 27px;
+    width: 50px;
+    height: 50px;
+    background: #919191;
+    border-radius: 6px;
+  }
+
+  &:after {
+    top: 256px;
+    left: 44px;
+    width: 17px;
+    height: 16px;
+    background: url("../img/icons/scroll-arrows.png") -239px -20px no-repeat;
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 1104px;
+    padding-bottom: 150px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 72px;
+  }
+
+  &__links {
+    display: flex;
+    margin-bottom: 25px;
+  }
+
+  &__column {
+    max-width: 160px;
+    margin-right: 85px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__link {
+    display: block;
+    line-height: 2.92;
+    color: #8297a7;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__desc {
+    line-height: 2;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__socials {
+    display: flex;
+    margin-bottom: 45px;
+  }
+
+  &__twitter, &__facebook {
+    position: relative;
+    display: block;
+    padding: 0 20px 0 40px;
+    font-size: 13px;
+    line-height: 2.7;
+    font-family: FiraSans;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 4px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      background: url("../img/icons/socials.png") no-repeat;
+    }
+  }
+
+  &__twitter {
+    background: #69b6f2;
+    margin-right: 6px;
+
+    &:after {
+      top: 11px;
+      left: 17px;
+      width: 16px;
+      height: 13px;
+      background-position: -71px -20px;
+    }
+
+    &:hover {
+      background: darken(#69b6f2, 10%);
+    }
+  }
+
+  &__facebook {
+    background: #3a579a;
+
+    &:after {
+      top: 9px;
+      left: 15px;
+      width: 11px;
+      height: 16px;
+      background-position: -20px -20px;
+    }
+
+    &:hover {
+      background: darken(#3a579a, 10%);
+    }
+  }
+
+  &__copyright-top, &__copyright-bottom {
+    margin-bottom: 15px;
+    line-height: 1.33;
+  }
+}
+
+.notebook {
+  position: absolute;
+  top: -530px;
+  right: -55px;
+}
