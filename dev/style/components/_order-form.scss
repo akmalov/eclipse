@@ -1,0 +1,80 @@
+.order-form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__design, &__email {
+    height: 60px;
+    margin-right: 16px;
+    padding-left: 25px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: Montserrat;
+    color: #333333;
+    border: 1px solid #fff;
+    border-radius: 2px;
+  }
+
+  &__design-sign, &__email-sign {
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: -9px;
+      right: 38px;
+      background: url("../img/icons/intro.png") no-repeat;
+    }
+  }
+
+  &__design {
+    width: 282px;
+
+    &-sign {
+
+      &:after {
+        width: 21px;
+        height: 22px;
+        background-position: -76px -20px;
+      }
+    }
+  }
+
+  &__email {
+    width: 266px;
+
+    &-sign {
+
+      &:after {
+        width: 14px;
+        height: 16px;
+        background-position: -137px -20px;
+      }
+    }
+  }
+
+  &__submit {
+    position: relative;
+    width: 65px;
+    height: 60px;
+    background: #28c8c6;
+    border: 1px solid #28c8c6;
+    border-radius: 3px;
+
+    &:hover {
+      background: darken(#28c8c6, 10%);
+      border-color: darken(#28c8c6, 10%);
+      transition: all 0.3s;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 21px;
+      right: 24px;
+      width: 16px;
+      height: 16px;
+      background: url("../img/icons/intro.png") -20px -20px no-repeat;
+    }
+  }
+}

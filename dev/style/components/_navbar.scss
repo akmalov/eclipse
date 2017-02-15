@@ -1,0 +1,62 @@
+.nav {
+  max-width: 780px;
+
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-right: 32px;
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 16px 4px 20px 2px;
+    font-size: 14px;
+    line-height: 2.07;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+
+    &:hover {
+      border-color: #28c8c6;
+    }
+  }
+
+  &__btn {
+    position: relative;
+    margin-left: -10px;
+    padding: 12px 58px 12px 36px;
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: 700;
+    background: #a100ff;
+    text-transform: none;
+    border-radius: 3px;
+    border: none;
+
+    &:hover {
+      background: darken(#a100ff, 10%);
+      transition: background 0.3s;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 19px;
+      right: 22px;
+      width: 16px;
+      height: 16px;
+      background: url("../img/icons/intro.png") -20px -20px no-repeat;
+    }
+  }
+}
